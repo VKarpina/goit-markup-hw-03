@@ -5,9 +5,23 @@ body {
   font-size: 16px;
 }
 
+/** RESET */
+
 ul,
 ol {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
 }
 
 a {
@@ -18,8 +32,12 @@ button {
   cursor: pointer;
 }
 
-address {
-  font-style: normal;
+/** COMMON */
+
+.container {
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 .section-subtitle {
@@ -38,6 +56,20 @@ address {
 
 /** HEADER */
 
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -48,15 +80,28 @@ address {
   color: #4d5ae5;
 }
 
+.header-logo {
+  padding: 24px 0;
+  margin-right: 76px;
+}
+
 .header-logo .logo-part {
   color: #2e2f42;
 }
 
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
 .nav-link {
+  display: block;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding: 24px 0;
 }
 
 .nav-link:hover,
@@ -64,7 +109,20 @@ address {
   color: #404bbf;
 }
 
+.address {
+  font-style: normal;
+  margin-left: auto;
+}
+
+.address-list {
+  gap: 40px;
+  display: flex;
+  align-items: center;
+}
+
 .address-link {
+  display: block;
+  padding: 24px 0;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
@@ -74,8 +132,6 @@ address {
 .address-link:focus {
   color: #404bbf;
 }
-
-/** ENDHEADER */
 
 /** HERO */
 
@@ -105,8 +161,6 @@ address {
   background-color: #404bbf;
 }
 
-/** ENDHERO */
-
 /** FEATURES */
 
 .features {
@@ -123,7 +177,6 @@ address {
 
 .features-item-text {
 }
-/** ENDFEATURES */
 
 /** TEAM */
 
@@ -155,8 +208,6 @@ address {
   text-align: center;
 }
 
-/** ENDTEAM */
-
 /** PORTFOLIO */
 
 .portfolio {
@@ -185,8 +236,6 @@ address {
 .portfolio-title-text {
 }
 
-/** ENDPORTFOLIO */
-
 /** FOOTER */
 
 .page-footer {
@@ -202,5 +251,3 @@ address {
   letter-spacing: 0.02em;
   color: #f4f4fd;
 }
-
-/** ENDFOOTER */
